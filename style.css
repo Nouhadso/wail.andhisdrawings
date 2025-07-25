@@ -1,0 +1,109 @@
+/* ===== GLOBAL STYLES & FONTS ===== */
+body {
+    font-family: 'Vollkorn', serif;
+    margin: 0;
+    background-color: #333333; 
+    color: #EAEAEA;           
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    display: flex;
+}
+
+/* ===== SIDEBAR STYLES (LEFT COLUMN) ===== */
+.sidebar {
+    width: 280px;
+    flex-shrink: 0;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    background-color: #333333;
+    border-right: 1px solid #444444;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.logo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #444444;
+    object-fit: cover;
+}
+
+/* --- Font Styling: Mixed Gaming & Simple Fonts --- */
+.site-title {
+    font-family: 'Press Start 2P', cursive; /* Gaming font */
+    font-size: 1.4em;
+    color: #A166D4;
+    margin: 20px 0 15px 0;
+    line-height: 1.2;
+}
+
+.site-description {
+    font-family: 'Press Start 2P', cursive; /* Gaming font */
+    font-size: 0.8em;
+    color: #CCCCCC; 
+    margin: 0 0 40px 0;
+}
+
+.bio-text {
+    font-family: 'Vollkorn', serif; /* Simple font */
+    font-size: 1.1em;
+    color: #CCCCCC;
+    padding: 0 10px;
+}
+/* --- End of Font Styling --- */
+
+.sidebar-footer {
+    font-size: 0.8em;
+    color: #888888;
+}
+
+/* ===== MAIN CONTENT STYLES (RIGHT COLUMN) ===== */
+.main-content {
+    flex-grow: 1;
+    padding: 40px 20px; 
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 50px; 
+}
+
+.gallery-item {
+    width: 70%;       
+    max-width: 750px; 
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto; 
+    display: block; 
+    border-radius: 4px;
+    background-color: #444;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 25px rgba(161, 102, 212, 0.3); 
+}
+
+.jevil-image {
+    width: 55%;
+    max-width: 600px;
+}
